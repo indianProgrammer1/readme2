@@ -30,7 +30,7 @@ on predefined rules (`rules.conf`) and store the results in a PostgreSQL databas
 3. After installation, verify PostgreSQL is running by opening **pgAdmin** or running:
  
  
- ⚙️ Step 2 — Install libpqxx (PostgreSQL C++ Library)
+##⚙️ Step 2 — Install libpqxx (PostgreSQL C++ Library)
 Option A: Using vcpkg (recommended)
 
 Open Command Prompt and run:
@@ -43,7 +43,7 @@ This installs the vcpkg package manager.
 Install libpqxx and dependencies:
 `vcpkg install libpqxx:x64-windows
 
-⚙️ Step 3 
+##⚙️ Step 3 
 Open CMD and go to the folder containing your files:
 Example:
 `ExecutionCoach.exe 
@@ -53,3 +53,5 @@ Example:
  
 
    
+   
+

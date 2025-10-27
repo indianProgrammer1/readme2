@@ -34,7 +34,7 @@ on predefined rules (`rules.conf`) and store the results in a PostgreSQL databas
 
 
 Open Command Prompt and run:
-`git clone https://github.com/microsoft/vcpkg.git
+`git clone https://github.com/microsoft/vcpkg.git`
 `cd vcpkg
 `bootstrap-vcpkg.bat`
 
@@ -47,12 +47,13 @@ Install libpqxx and dependencies:
 Open CMD and go to the folder containing your files:
 Example:
 `ExecutionCoach.exe 
-`"pathTo/trades.csv" 
-`"pathTo/rules.conf" 
- `"host=localhost port=5432 dbname=postgres user=postgres password=YOUR_PASSWORD"
+`pathTo/trades.csv
+`pathTo/rules.conf 
+ `host=localhost port=5432 dbname=postgres user=postgres password=YOUR_PASSWORD
  
 
    
    
+
 
 

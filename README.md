@@ -49,8 +49,27 @@
 
 ---
 
-### 🏗️ Step 3 — Build the Project
-If you have `g++` installed, you can compile directly from CMD:  
+### ⚙️ Step 3 — Verify DLL Placement
+Make sure your folder looks like this:
+
+```
+C:\ExecutionCoach\
+├── ExecutionCoach.exe
+├── pqxx.dll
+├── libpq.dll
+├── libssl-3-x64.dll
+├── libcrypto-3-x64.dll
+├── rules.conf
+├── schema.sql
+└── trades.csv
+```
+
+All the required DLLs should be in the same folder as `ExecutionCoach.exe`.
+
+---
+
+### 🏗️ Step 4 — Build the Project
+If you have `g++` installed, you can compile directly from CMD:
 ```
 g++ -std=c++17 -I"path\to\libpqxx\include" -L"path\to\libpqxx\lib" *.cpp -lpqxx -lpq -o ExecutionCoach.exe
 ```
@@ -59,7 +78,7 @@ Alternatively, you can build using Visual Studio (configure include/linker paths
 
 ---
 
-## ▶️ Step 4 — Run the Application
+## ▶️ Step 5 — Run the Application
 Open **Command Prompt**, navigate to the folder where `ExecutionCoach.exe` is located, and run:
 
 ```
@@ -93,6 +112,7 @@ Queue drops : 0
 ```
 
    
+
 
 
 

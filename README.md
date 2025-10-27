@@ -1,7 +1,9 @@
-# ExecutionCoach
+
 
 ## Project Overview
-**ExecutionCoach** is a console-based C++ application (no UI) designed to analyze trading data from a CSV file based on predefined rules (`rules.conf`) and store the results in a PostgreSQL database.
+**ExecutionCoach** is a console-based C++ application (no UI) designed to 
+analyze trading data from a CSV file based 
+on predefined rules (`rules.conf`) and store the results in a PostgreSQL database.
 
 ---
 
@@ -28,12 +30,26 @@
 3. After installation, verify PostgreSQL is running by opening **pgAdmin** or running:
  
  
- 
  ⚙️ Step 2 — Install libpqxx (PostgreSQL C++ Library)
 Option A: Using vcpkg (recommended)
 
 Open Command Prompt and run:
-git clone https://github.com/microsoft/vcpkg.git
-cd vcpkg
-bootstrap-vcpkg.bat
+`git clone https://github.com/microsoft/vcpkg.git
+`cd vcpkg
+`bootstrap-vcpkg.bat`
+
+This installs the vcpkg package manager.
+
+Install libpqxx and dependencies:
+`vcpkg install libpqxx:x64-windows
+
+⚙️ Step 3 
+Open CMD and go to the folder containing your files:
+Example:
+`ExecutionCoach.exe 
+`"pathTo/trades.csv" 
+`"pathTo/rules.conf" 
+ `"host=localhost port=5432 dbname=postgres user=postgres password=YOUR_PASSWORD"
+ 
+
    
